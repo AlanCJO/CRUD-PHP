@@ -83,6 +83,19 @@ class Database
         // EXECUTAR A QUERY
         $this->execute($query, array_values($values));
 
+        // RETORNA SUCESSO
+        return true;
+    }
+
+    public function delete($where):bool
+    {
+        // MONTA A QUERY
+        $query = 'DELETE FROM '.$this->table.' WHERE '.$where;
+
+        // EXECUTA A QUERY
+        $this->execute($query);
+
+        // RETORNA SUCESSO 
         return true;
     }
 }

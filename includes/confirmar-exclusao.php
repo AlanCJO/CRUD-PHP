@@ -12,12 +12,12 @@
 
         <div class="form-group">
             <a href="index.php">
-                <button class="btn btn-success">Cancelar</button>
+                <button type="button" class="btn btn-success">Cancelar</button>
             </a>
 
             <button type="submit" name="excluir" class="btn btn-danger">Excluir</button>
         </div>  
-        
+
     </form>
 
 </main>
