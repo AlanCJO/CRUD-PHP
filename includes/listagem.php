@@ -62,6 +62,15 @@
                     <input type="text" name="busca" class="form-control" value="<?=$busca?>">
                 </div>
 
+                <div class="col">
+                    <label>Status</label>
+                    <select name="status" class="form-control">
+                        <option value="">Ativa/Inativa</option>
+                        <option value="S">Ativa</option>
+                        <option value="N">Inativa</option>
+                    </select>
+                </div>
+
                 <div class="col d-flex align-items-end">
                     <button type="submit" class="btn btn-primary">Filtrar</button>
                 </div>

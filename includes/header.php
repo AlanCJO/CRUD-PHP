@@ -14,7 +14,7 @@
 
     <div class="container">
 
-        <div class="jumbotron bg-danger">
+        <div class="jumbotron bg-success">
             <h1>CRUD Vagas</h1>
             <p>Exemplo de CRUD com PHP Orientado a Objetos</p>
         </div>
