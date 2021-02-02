@@ -17,10 +17,11 @@ $condicoes = [
     strlen($filtroStatus) ? 'ativo = "'.$filtroStatus.'"' : null
 ];
 
-
+// REMOVE POSIÇÕES VAZIAS
+$condicoes = array_filter($condicoes);
 
 // CLÁUSULA WHERE
-$condicoes = array_filter($condicoes);
+$where = implode(' AND ', $condicoes);
 
 // OBTÉM AS VAGAS
 $vagas = vaga::getVagas($where);
